@@ -1,0 +1,12 @@
+{
+  "Navbar": {
+    "projects": "Проекты",
+    "about": "Обо мне",
+    "services": "Услуги",
+    "faq": "FAQ",
+    "language": "Язык",
+    "en": "EN",
+    "ru": "RU",
+    "startProject": "Начать проект"
+  }
+}
