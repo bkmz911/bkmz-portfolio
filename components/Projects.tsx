@@ -119,7 +119,7 @@ export default function Projects() {
                             }}
                             className="w-full h-full relative overflow-hidden flex items-center justify-center p-8 lg:p-10 xl:p-12 2xl:px-14 object-cover bg-zinc-200"
                         >
-                            {/* Blurred Background Layer - Default */}
+                            {/* Blurred Background Layer - Defaultt */}
                             <Image
                                 src={project.img}
                                 alt={`${project.title} background`}
