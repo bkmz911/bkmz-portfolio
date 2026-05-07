@@ -1,19 +1,19 @@
 import type {Metadata} from 'next';
-import { Inter } from 'next/font/google';
+import { Geist } from 'next/font/google';
 import '../globals.css'; // Global styles
 import LenisProvider from '@/components/LenisProvider';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 
-const inter = Inter({
+const geist = Geist({
   subsets: ['latin'],
   variable: '--font-sans',
 });
 
 export const metadata: Metadata = {
-  title: 'Lorian Hans - Web Designer & Digital Creative',
-  description: 'Portfolio of Lorian Hans, a Web Designer & Digital Creative based in France.',
+  title: 'Ilya Bkmz - Web Developer & Digital Creative',
+  description: 'Portfolio of Ilya Chesnokov, a Web Developer & Digital Creative based in Russia.',
 };
 
 export function generateStaticParams() {
@@ -33,8 +33,8 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} font-sans`}>
-      <body className="bg-[#f5f5f5] text-[#111111] antialiased" suppressHydrationWarning>
+    <html lang={locale} className={`${geist.variable} font-sans`}>
+      <body className="antialiased" suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           <LenisProvider>
             {children}
