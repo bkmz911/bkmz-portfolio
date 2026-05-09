@@ -17,7 +17,8 @@ export const projectsPreviewData: ProjectPreview[] = [
         type: "Startup Marketplace",
         format: "landscape",
         img: "/project-cases/code-venture/project-case-code-venture0.avif",
-        hoverImg: "/project-cases/code-venture/project-case-code-venture1.avif",
+        hoverImg:
+            "/project-cases/code-venture/project-case-code-venture1.avif",
         span: 1,
     },
     {
@@ -26,7 +27,8 @@ export const projectsPreviewData: ProjectPreview[] = [
         type: "TG Mini App",
         format: "portrait",
         img: "/project-cases/pashalka/project-case-pashalka0.avif",
-        hoverImg: "/project-cases/pashalka/project-case-pashalka1.avif",
+        hoverImg:
+            "/project-cases/pashalka/project-case-pashalka1.avif",
         span: 1,
     },
     {
@@ -35,7 +37,8 @@ export const projectsPreviewData: ProjectPreview[] = [
         type: "Digital Products Marketplace",
         format: "landscape",
         img: "/project-cases/upora/project-case-upora0.avif",
-        hoverImg: "/project-cases/upora/project-case-upora1.avif",
+        hoverImg:
+            "/project-cases/upora/project-case-upora1.avif",
         span: 1,
     },
     {
@@ -43,8 +46,9 @@ export const projectsPreviewData: ProjectPreview[] = [
         title: "Moerodnoe",
         type: "Personal Website",
         format: "landscape",
-        img: "/project-cases/moerodnoe/project-case-moerodnoe0.avif",
-        hoverImg: "/project-cases/moerodnoe/project-case-moerodnoe1.avif",
+       img: "/project-cases/moerodnoe/project-case-moerodnoe0.avif",
+        hoverImg:
+            "/project-cases/moerodnoe/project-case-moerodnoe1.avif",
         span: 1,
     },
     {
@@ -53,7 +57,8 @@ export const projectsPreviewData: ProjectPreview[] = [
         type: "Skin Trading Platforme",
         format: "landscape",
         img: "/project-cases/skin-space/project-case-skin-space0.avif",
-        hoverImg: "/project-cases/skin-space/project-case-skin-space1.avif",
+        hoverImg:
+            "/project-cases/skin-space/project-case-skin-space1.avif",
         span: 1,
     },
 ];
