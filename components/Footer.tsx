@@ -48,7 +48,7 @@ export default function Footer() {
             {/* Right side Content */}
             <motion.div
                 style={{ y: contentY }}
-                className="w-full lg:w-1/2 flex flex-col p-8 lg:p-16 lg:px-24 lg:py-16 justify-between h-[60vh] lg:h-full relative z-10 "
+                className="w-full lg:w-1/2 flex flex-col gap-10 p-8 lg:p-16 lg:px-24 lg:py-16 justify-between h-[60vh] lg:h-full relative z-10 "
             >
                 <div className="items-start flex flex-col">
                     <motion.h2

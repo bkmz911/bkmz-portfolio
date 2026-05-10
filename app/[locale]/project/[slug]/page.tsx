@@ -9,7 +9,7 @@ import { getProjectBySlug } from "@/data/projects";
 import ProjectImageCard from "@/components/ProjectImageCard";
 import ProjectPagination from "@/components/ProjectPagination";
 import { useTranslations } from "next-intl";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function ProjectDetail() {
     const params = useParams();
@@ -17,10 +17,6 @@ export default function ProjectDetail() {
     const projectData = getProjectBySlug(slug);
 
     const t = useTranslations("ProjectDetail");
-
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" })
-    }, [slug]);
 
     if (!projectData) {
         return notFound();

@@ -5,8 +5,11 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 
 import { projectsPreviewData } from "@/data/projects";
+import { useState } from "react";
 
 export default function Projects() {
+    const [isLoading, setIsLoading] = useState(true);
+
     return (
         <section id="projects" className="bg-white">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-1 p-1">
@@ -16,6 +19,10 @@ export default function Projects() {
                         key={project.id}
                         className="relative overflow-hidden group block break-inside-avoid aspect-[3/2] bg-zinc-200"
                     >
+                        {isLoading && (
+                            <div className="absolute inset-0 z-20 animate-shimmer bg-zinc-200" />
+                        )}
+
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -42,6 +49,7 @@ export default function Projects() {
                                 sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover" // Убрали все transition и hover:opacity-0
                                 referrerPolicy="no-referrer"
+                                onLoad={() => setIsLoading(false)}
                             />
 
                             {/* Hover картинка: просто плавно ложится ПОВЕРХ главной */}
