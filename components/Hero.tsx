@@ -13,10 +13,10 @@ export default function Hero() {
     return (
         <section
             id="top"
-            className="relative h-screen flex flex-col lg:flex-row overflow-hidden gap-[5px]"
+            className="relative h-screen flex flex-col 2xl:flex-row overflow-hidden gap-[5px]"
         >
             {/* Left side text */}
-            <div className="w-full lg:w-1/2 flex flex-col justify-between relative z-10 py-2 px-2 md:py-4 md:px-4">
+            <div className="w-full 2xl:w-1/2 flex flex-col justify-between relative z-10 py-2 px-2 md:py-4 md:px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 150 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -92,13 +92,13 @@ export default function Hero() {
                     ease: [0.16, 1, 0.3, 1],
                     delay: 0.6,
                 }}
-                className="w-full lg:w-1/2 h-full relative block shrink-0 overflow-hidden"
+                className="w-full 2xl:w-1/2 h-full relative block shrink-0 overflow-hidden"
             >
                 <Image
                     src="/hero-avatar-desktop.avif"
                     alt="Ilyha Bkmz Portrait"
                     fill
-                    className="xl:block object-cover object-center filter grayscale contrast-125"
+                    className="2xl:block object-cover object-center filter grayscale contrast-125"
                     priority
                     referrerPolicy="no-referrer"
                 />
@@ -106,7 +106,7 @@ export default function Hero() {
                     src="/hero-avatar-mobile.avif"
                     alt="Ilyha Bkmz Portrait"
                     fill
-                    className="block xl:hidden object-cover object-center filter grayscale contrast-125"
+                    className="block 2xl:hidden object-cover object-center filter grayscale contrast-125"
                     priority
                     referrerPolicy="no-referrer"
                 />

@@ -19,46 +19,53 @@ export default function Projects() {
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-100px" }}
+                            // Слегка уменьшили margin, чтобы картинка начинала грузиться чуть раньше
+                            viewport={{ once: true, margin: "-50px" }}
                             transition={{
-                                duration: 0.8,
-                                delay: i * 0.1,
-                                ease:[0.16, 1, 0.3, 1],
+                                duration: 0.6, // Сделали появление чуть быстрее (чтобы не забивать поток)
+                                // ИСПРАВЛЕНО: Задержка теперь зависит от колонки (левая сразу, правая через 0.1s)
+                                // Это убирает фейковые "зависания" при скролле вниз
+                                delay: (i % 2) * 0.1,
+                                ease: [0.16, 1, 0.3, 1],
                             }}
-                            className="w-full h-full relative"
+                            // transform-gpu принудительно выносит анимацию на видеокарту (Hardware Acceleration)
+                            className="w-full h-full relative transform-gpu"
+                            style={{ willChange: "transform, opacity" }} // Подсказка браузеру для подготовки
                         >
-                            {/* Главная картинка: плавно растворяется при ховере */}
+                            {/* Главная картинка: БОЛЬШЕ НЕ АНИМИРУЕТСЯ */}
+                            {/* Так как у нас запеченные картинки без пустот, Hover-картинка просто перекроет эту! */}
                             <Image
                                 src={project.img}
                                 alt={project.title}
                                 fill
-                                quality={95}
+                                quality={75}
                                 sizes="(max-width: 768px) 100vw, 50vw"
-                                className="object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
+                                className="object-cover" // Убрали все transition и hover:opacity-0
                                 referrerPolicy="no-referrer"
                             />
 
-                            {/* Hover картинка: плавно проявляется при ховере */}
+                            {/* Hover картинка: просто плавно ложится ПОВЕРХ главной */}
                             <Image
                                 src={project.hoverImg}
                                 alt={`${project.title} hover`}
                                 fill
-                                quality={95}
+                                quality={75}
                                 sizes="(max-width: 768px) 100vw, 50vw"
-                                className="object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+                                // Добавили will-change-opacity, чтобы видеокарта подготовилась к ховеру заранее
+                                className="object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 will-change-opacity"
                                 referrerPolicy="no-referrer"
                             />
 
-                            {/* Градиент для текста снизу (синхронизирован по времени с картинками) */}
-                            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none" />
+                            {/* Градиент для текста */}
+                            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none will-change-opacity" />
 
-                            {/* Тексты: плавно проявляются вместе с градиентом */}
-                            <div className="absolute left-4 bottom-4 z-30 overflow-hidden flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                            {/* Тексты */}
+                            <div className="absolute left-4 bottom-4 z-30 overflow-hidden flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none will-change-opacity">
                                 <h3 className="text-white text-xl md:text-2xl font-medium tracking-tight">
                                     {project.title}
                                 </h3>
                             </div>
-                            <div className="absolute right-4 bottom-4 z-30 overflow-hidden flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-right pointer-events-none">
+                            <div className="absolute right-4 bottom-4 z-30 overflow-hidden flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-right pointer-events-none will-change-opacity">
                                 <p className="text-white text-sm md:text-xl font-medium tracking-tight">
                                     {project.type}
                                 </p>
