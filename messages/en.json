@@ -1,140 +1,140 @@
 {
     "Navbar": {
         "projects": "Projects",
-        "about": "About Me",
+        "about": "About",
         "services": "Services",
-        "contact": "Contacts",
+        "contact": "Contact",
         "language": "Language",
         "en": "EN",
         "ru": "RU"
     },
     "Hero": {
-        "subtitle": "Web Developer & your key to building digital products",
-        "projects": "Works"
+        "subtitle": "Developing websites and web applications that solve your business goals",
+        "projects": "Selected Works"
     },
     "Services": {
         "title": "Services",
-        "desc1": "From interactive Telegram Mini Apps to full-scale SaaS platforms — my work is focused on performance, secure logic",
-        "desc2": "and deep involvement in creating high-quality digital products.",
+        "desc1": "I build everything from landing pages and business websites to complex web platforms and Telegram Mini Apps.",
+        "desc2": "I take care of the technical routine, so you can focus on growing your product.",
         "services": {
             "service1": {
-                "title": "Frontend Development",
-                "item1": "Pixel-perfect layout",
-                "item2": "Responsive interface",
-                "item3": "API integration"
+                "title": "Web Development (Frontend)",
+                "item1": "Modern and clean design",
+                "item2": "Flawless mobile experience",
+                "item3": "Engaging animations and interactivity"
             },
             "service2": {
-                "title": "Backend Development",
-                "item1": "Development of scalable APIs",
-                "item2": "Database design",
-                "item3": "Payment system integration"
+                "title": "Server Logic (Backend)",
+                "item1": "Online payment integration",
+                "item2": "Secure data storage",
+                "item3": "Third-party services integration (API)"
             },
             "service3": {
-                "title": "SaaS and Platforms",
+                "title": "Custom Projects",
                 "item1": "Telegram Mini Apps (TMA)",
-                "item2": "SaaS MVP development",
-                "item3": "Custom marketplaces"
+                "item2": "Startup launches (MVP)",
+                "item3": "Marketplace development"
             },
             "service4": {
-                "title": "Optimization",
-                "item1": "Performance improvement",
-                "item2": "SEO-oriented architecture",
-                "item3": "Technical consulting"
+                "title": "Support & Optimization",
+                "item1": "Website performance boost",
+                "item2": "SEO optimization",
+                "item3": "Consulting and code audit"
             }
         }
     },
     "Experience": {
-        "title": "Work Experience",
+        "title": "Experience",
         "download-btn": "Download Resume",
-        "desc1": "My name is Ilya, I am a Full-Stack developer with more than 3 years of commercial experience in building scalable web applications,",
-        "desc2": "I specialize in turning complex ideas into intuitive and engaging products.",
+        "desc1": "My name is Ilya, and I am a web developer. For over 3 years, I've been helping businesses build and launch their projects online:",
+        "desc2": "building high-quality applications so your users stay happy, and you have peace of mind regarding the result.",
         "experience": {
             "case1": {
                 "duration": "2026",
-                "role": "Junior Full-Stack Developer",
+                "role": "Full-Stack Developer",
                 "company": "Freelance",
-                "description": "Development and maintenance of full-scale web applications (Frontend | Full-Stack implementations) for various clients, including startups and small businesses. Tech stack: Next.js, Express.js, MongoDB."
+                "description": "Turnkey website and service development. I handled the entire cycle: from the visual interface (buttons, animations) to internal logic (databases, server-side). Helped small businesses and startups launch their products quickly."
             },
             "case2": {
                 "duration": "2025",
                 "role": "Frontend Developer",
                 "company": "Freelance",
-                "description": "Development of full-fledged frontend interfaces for many projects, including Telegram Mini Apps (TMA) and SaaS MVP. Tech stack: Next.js, TypeScript, Tailwind CSS."
+                "description": "Creating user-friendly interfaces. This included developing highly popular Telegram Mini Apps and helping startups launch the first versions of their products."
             },
             "case3": {
                 "duration": "2024",
-                "role": "Junior Frontend Developer",
+                "role": "Frontend Developer",
                 "company": "Freelance",
-                "description": "Developing the frontend part for the user registration & authentication system - MindMatch. Tech stack - React.js, Tailwind CSS, React Hook Form."
+                "description": "Developed the visual part for the MindMatch system. Made the registration and login processes as simple, fast, and secure as possible for users."
             },
             "case4": {
                 "duration": "2023",
-                "role": "Junior Layout Developer",
+                "role": "UI Developer",
                 "company": "Freelance",
-                "description": "Pixel-perfect, cross-browser, and responsive layout of screens based on Figma mockups for Next.js applications. Tech stack: HTML, CSS, Tailwind CSS."
+                "description": "Accurate conversion of Figma designs into working code. Built responsive websites that look equally great on large monitors and mobile phone screens."
             }
         }
     },
     "Tools": {
-        "title": "Tools",
+        "title": "Technologies",
         "tools": {
             "tool1": {
                 "name": "Next.js",
-                "desc": "JavaScript framework"
+                "desc": "Foundation for lightning-fast websites"
             },
             "tool2": {
                 "name": "TypeScript",
-                "desc": "Programming language"
+                "desc": "Reliable error-free code"
             },
             "tool3": {
                 "name": "HTML & CSS",
-                "desc": "Markup and styling languages"
+                "desc": "Structure and visual design"
             },
             "tool4": {
                 "name": "Tailwind CSS",
-                "desc": "CSS framework"
+                "desc": "Modern styling"
             },
             "tool5": {
                 "name": "Express.js",
-                "desc": "JavaScript framework"
+                "desc": "Server-side logic (Backend)"
             },
             "tool6": {
                 "name": "Mongo DB",
-                "desc": "NoSQL database"
+                "desc": "Secure data storage"
             }
         }
     },
     "FAQ": {
         "faqs": {
             "faq1": {
-                "question": "What types of clients do you usually work with?",
-                "answer": "I work with a wide range of clients, from startups and small businesses to creative professionals and established brands. Whether you are launching something new or updating an existing website, I aim to tailor each project to your specific goals."
+                "question": "What kind of projects do you work on?",
+                "answer": "I work with a wide range of clients: from small businesses needing a high-converting landing page, to startups looking to build a complex platform or a Telegram Mini App. I adapt to your specific needs."
             },
             "faq2": {
-                "question": "What services do you offer?",
-                "answer": "My core services include frontend development, full-stack development, SEO optimization, as well as the design of various web portals, ranging from Telegram Mini Apps (TMA) to custom marketplaces. I also offer consulting on the architectural components of projects and website audits if you need an expert assessment."
+                "question": "What exactly can you do?",
+                "answer": "I build turnkey web projects. This can be a landing page, a corporate website, an online store, a marketplace, or a web application. I can handle just the visual part (what the client sees) or the entire internal logic (payments, databases, user dashboards)."
             },
             "faq3": {
-                "question": "How long does a typical project take?",
-                "answer": "Timelines vary depending on the scope of the project, but for most standard websites, it takes 2 to 5 weeks from the initial concept to launch. I will provide a detailed schedule after our first consultation."
+                "question": "How long does a project take?",
+                "answer": "It depends on the scale. A standard landing page or corporate website can be launched in 2–4 weeks. Complex platforms or apps take more time. I can provide exact deadlines after we discuss your task."
             },
             "faq4": {
-                "question": "What is your pricing policy?",
-                "answer": "The cost is calculated based on the scope and complexity of the project. After discussing your goals and all the details, I will provide you with a project cost estimate with a clear description of deliverables and execution stages."
+                "question": "How is the cost calculated?",
+                "answer": "The price depends on the complexity of the logic, the number of pages, and the features. After our initial chat, I will prepare a free estimate document with a clear breakdown of the project stages."
             },
             "faq5": {
-                "question": "Do you offer support after the project launch?",
-                "answer": "Yes. I provide ongoing maintenance, content updates, and design support if you need further help after your website goes live."
+                "question": "Do you provide support after launch?",
+                "answer": "Yes, absolutely. I don't abandon projects after delivery. You can reach out to me for technical maintenance, adding new sections, or expanding your website's functionality in the future."
             }
         }
     },
     "Footer": {
-        "title": "Get in touch",
-        "desc": "If you want to collaborate, start a new project, or simply connect, I would be happy to hear from you."
+        "title": "Let's Talk",
+        "desc": "Need a landing page, a business website, or a complex app? Drop me a message, and we'll discuss the best way to bring your idea to life."
     },
     "ProjectDetail": {
         "back": "Back",
-        "link": "View Website",
+        "link": "Visit Website",
         "services": "Services",
         "client": "Client",
         "year": "Year",
@@ -143,52 +143,52 @@
         "previous": "Previous Project",
         "next": "Next Project",
         "two_pistolets": {
-            "desc": "GameFi Telegram Mini App in a mafia setting. Players complete daily tasks, build their criminal network (clan), and earn in-game currency to open cases containing real rewards — TON and Telegram Stars.",
+            "desc": "A GameFi Telegram Mini App in a mafia setting. Players complete daily tasks, build their criminal network (clan), and earn in-game currency to open cases containing real rewards — TON and Telegram Stars.",
             "services": "Frontend Development",
             "client": "Startup",
             "year": "2025",
-            "concept": "The app's visual language is built on noir and mafia aesthetics. The dark color palette contrasts with bright accents in the form of gold stars, chips, and weapons. The name refers to cult cinema, setting an exciting tone for loot box mechanics (Don's Case, Code of Honor).",
-            "scope": "Development of the application's structure and interface: case shop, system of daily and sponsored tasks (ad viewing, clicks), multi-level referral system (clans with 10% passive income), and a player profile with room for future gamification (leaderboards, inventory, levels)."
+            "concept": "The app's visual language is built on noir and mafia aesthetics. The dark color palette contrasts with bright accents like golden stars, chips, and weapons. The naming references cult cinema, setting an exciting tone for the loot box mechanics (Don's Case, Code of Honor).",
+            "scope": "Developed the app's structure and interface: case store, daily and sponsored task system (ad viewing, clicks), a multi-level referral system (clans with 10% passive income), and a player profile designed for future gamification (leaderboards, inventory, levels)."
         },
         "code_venture": {
-            "desc": "A platform for buying and selling ready-made SaaS MVPs and production-ready code. The project brings developers together, allowing them to safely trade software architecture using an Escrow Protocol and convenient search by tech stack.",
+            "desc": "A platform for buying and selling ready-made SaaS MVPs and production-ready code. The project connects developers, allowing them to safely trade software architecture using an Escrow Protocol and a convenient tech stack search.",
             "services": "Full-Stack Development",
             "client": "Personal Project",
             "year": "2026",
-            "concept": "The project is made in a modern dark-mode aesthetic with neon blue-violet accents that emphasize the technological nature of the product. The interface uses strict typography and elements styled after a development environment (terminal windows, code fragments) to create a trustworthy and familiar setting for the target audience — programmers.",
-            "scope": "Design and development of a full web application: landing page, catalog (Discovery Engine) with filtering by stack and categories, a product card creation flow with a built-in AI description generator, and a detailed seller profile with Dispute Stats and sales analytics."
+            "concept": "The project is designed in a modern dark-mode aesthetic with neon blue-purple accents, emphasizing the product's high-tech nature. The interface uses strict typography and elements stylized as a development environment (terminal windows, code snippets) to create a trustworthy and familiar space for the target audience — programmers.",
+            "scope": "Designed and developed a full-fledged web application: landing page, catalog (Discovery Engine) with tech stack and category filtering, a product creation flow with a built-in AI description generator, and a detailed seller profile with dispute statistics and sales analytics."
         },
         "pashalka": {
-            "desc": "A platform-builder that allows businesses to launch their own gamified activities in Telegram. The service includes a fully functional admin panel for configuring the app and a client-side experience with a mini-game, tasks, and giveaway systems to engage brand audiences.",
+            "desc": "A builder platform allowing businesses to launch their own gamified activities in Telegram. The service includes a fully functional admin panel for app configuration and a client side featuring a mini-game, tasks, and a giveaway system to engage brand audiences.",
             "services": "Frontend Development",
             "client": "Startup",
             "year": "2025",
-            "concept": "The design system is divided into two environments. The control panel is made in a strict dark style (Dark Mode) with a bright acid-neon gradient in the header, which gives the interface a modern technological look. The client side (the game itself) offers flexible visual customization — from cartoon viruses to donuts — allowing the visuals to be adapted to any brand style.",
-            "scope": "Development of a comprehensive SaaS solution: creation of a company dashboard (bot profile setup, selection of game assets from the library, tariff/subscription management) and development of the B2C Mini App itself (arcade 'catcher' mechanic, leaderboard integration, task system, and rewards shop)."
+            "concept": "The design system is divided into two environments. The control panel is executed in a strict Dark Mode style with a bright acid-neon gradient in the header, giving the interface a modern, tech-savvy look. The client side (the game itself) offers flexible visual customization — from cartoon viruses to donuts, allowing the visuals to adapt to any brand's style.",
+            "scope": "Developed a comprehensive SaaS solution: created a company dashboard (bot profile setup, game asset selection from a library, tariff/subscription management) and built the B2C Mini App itself (arcade 'item catcher' mechanics, leaderboard integration, task system, and reward store)."
         },
         "upora": {
-            "desc": "A platform for buying and selling digital products from creators around the world. Users can act both as buyers and as authors, publishing their work, managing their storefront, and receiving payments through an integrated reliable payment processing system.",
+            "desc": "A platform for buying and selling digital products from creators worldwide. Users can act as both buyers and creators, listing their work, managing their storefront, and receiving payments through a built-in, reliable acquiring system.",
             "services": "Frontend Development, Stripe Integration",
             "client": "Startup",
             "year": "2025",
-            "concept": "A minimalist light interface with support for switching to dark theme (Dark/Light mode). The design is created so as not to distract attention from the most important thing — the visual presentation of digital products. Clean typography, a spacious card grid, and intuitive navigation create a modern and trustworthy user experience.",
-            "scope": "End-to-end marketplace development: a homepage with catalog, search, and filtering, detailed product cards with a recommendations block, a personal account with role separation (buyer/author), and seamless checkout integration via Stripe with support for bank cards, Link, Cash App, and Amazon Pay."
+            "concept": "A minimalist light interface supporting a Dark/Light mode toggle. The design is crafted not to distract from what matters most — the visual presentation of digital goods. Clean typography, a spacious card grid, and intuitive navigation create a modern and trustworthy user experience.",
+            "scope": "Developed the full cycle of the marketplace: a home page with catalog, search, and filtering, detailed product cards with a recommendation block, a user dashboard with role separation (buyer/creator), and seamless checkout integration via Stripe supporting credit cards, Link, Cash App, and Amazon Pay."
         },
         "moerodnoe": {
-            "desc": "A platform for professional genealogist Dmitriy Gribkov and a community of family history keepers. The website presents services for restoring family lineage — from archival research and family tree creation to writing a family chronicle and conducting genealogical expertise.",
+            "desc": "A platform for professional genealogist Dmitry Gribkov and the community of family history keepers. The site presents ancestry restoration services — from archival searches and family tree creation to writing a family book and conducting genealogical expertise.",
             "services": "UI/UX Design, Full-Stack Development",
-            "client": "Dmitriy Gribkov",
+            "client": "Dmitry Gribkov",
             "year": "2025",
-            "concept": "The visual concept is built on associations with heritage, nature, and roots: a warm beige-green color palette and background patterns in the form of tree branches. One of the main features of the interface is a floating video widget with a message from the founder, which accompanies the user while scrolling the site, building a personal connection and increasing trust.",
-            "scope": "Design and layout of an informative landing page. Development of service cards (in the form of a slider/carousel) with detailed pricing descriptions, integration of a video works and reviews gallery, setup of a lead capture form for a free initial consultation, and implementation of the 'sticky' video player logic."
+            "concept": "The visual concept is built on associations with heritage, nature, and roots: a warm beige-green color palette and background patterns resembling tree branches. One of the main interface features is a floating video widget with the founder's message, accompanying the user as they scroll, building a personal connection and increasing trust.",
+            "scope": "Designed and developed an informative landing page. Created service cards (in a slider/carousel format) with detailed pricing descriptions, integrated a gallery of video works and reviews, set up a lead capture form for a free initial consultation, and implemented the logic for a 'sticky' video player."
         },
         "skin_space": {
-            "desc": "A platform for instant exchange, buying, and selling in-game items from CS2 and DOTA 2 for real money. The service offers users secure trades, low fees, and a guarantee on every trade.",
+            "desc": "A platform for instant trading, buying, and selling in-game items from CS2 and DOTA 2 for real money. The service offers users safe transactions, low fees, and a guarantee on every trade.",
             "services": "Full-Stack Development, Steam API Integration",
             "client": "Startup",
             "year": "2025",
-            "concept": "The project is made in a classic gamer aesthetic: a dark background (dark-mode) with an accent 'fiery' yellow color that echoes the logo. Great attention is paid to high-quality 3D character renders and a clean, uncluttered UI to keep the focus on the inventory items themselves.",
-            "scope": "Development of promotional blocks for the homepage, a complex interactive trading interface (inventory panel with search, filtering by game and item rarity), as well as a functional user profile tied to Steam data (Trade link, API key, Steam ID64)."
+            "concept": "The project is executed in a classic gamer aesthetic: a dark background with an accent 'fiery' yellow color echoing the logo. Great attention is paid to high-quality 3D character renders and a clean, uncluttered UI to focus on the inventory items themselves.",
+            "scope": "Developed promotional blocks for the home page, a complex interactive trading interface (inventory panel with search, game and rarity filtering), and a functional user profile linked to Steam data (Trade link, API key, Steam ID64)."
         }
     }
 }

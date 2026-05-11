@@ -78,7 +78,7 @@ export default function Services() {
                                 transition={{ duration: 0.6, delay: iG * 0.1 }}
                                 className="mb-8"
                             >
-                                <div className="grid grid-cols-3 items-end pb-4 font-medium">
+                                <div className="flex justify-between items-center pb-4 font-medium">
                                     <div className="text-muted-foreground text-sm md:text-base tracking-widest">
                                         {`(${iG + 1})`}
                                     </div>

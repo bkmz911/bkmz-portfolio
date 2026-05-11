@@ -28,7 +28,7 @@ export default function Navbar({
     };
 
     return (
-        <motion.nav className="fixed top-0 left-0 w-full z-50 p-4 md:p-[20px] flex justify-between items-start pointer-events-none">
+        <motion.nav className="fixed top-0 left-0 w-full z-50 p-2 md:p-4 flex justify-between items-start pointer-events-none">
             {/* Left side: Logo/Name */}
             <div className="flex-1 pointer-events-auto">
                 {isScrolled && (
@@ -71,7 +71,7 @@ export default function Navbar({
                 {/* 1. Кнопка всегда сверху (мобилка) или справа (десктоп) */}
                 <button
                     onClick={toggleMenu}
-                    className="relative cursor-pointer w-12 h-12 md:w-14 md:h-14 flex items-center justify-center hover:bg-gray-50 transition-colors flex-shrink-0 focus:outline-none z-10"
+                    className="relative cursor-pointer w-10 h-10 md:w-12 md:h-12 flex items-center justify-center hover:bg-gray-50 transition-colors flex-shrink-0 focus:outline-none z-10"
                     aria-label="Toggle Menu"
                 >
                     <motion.div
