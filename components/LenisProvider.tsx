@@ -31,7 +31,7 @@ export default function LenisProvider({
                 lerp: 0.05,
                 duration: 1.5,
                 smoothWheel: true,
-                syncTouch: true,
+                syncTouch: false,
             }}
         >
             <ScrollReset />

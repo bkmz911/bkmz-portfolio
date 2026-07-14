@@ -6,9 +6,11 @@ import { Link } from "@/i18n/routing";
 
 import { projectsPreviewData } from "@/data/projects";
 import { useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function Projects() {
     const [isLoading, setIsLoading] = useState(true);
+    const isMobile = useIsMobile();
 
     return (
         <section id="projects" className="bg-white">
@@ -52,28 +54,30 @@ export default function Projects() {
                                 onLoad={() => setIsLoading(false)}
                             />
 
-                            {/* Hover картинка: просто плавно ложится ПОВЕРХ главной */}
-                            <Image
-                                src={project.hoverImg}
-                                alt={`${project.title} hover`}
-                                fill
-                                quality={75}
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                                // Добавили will-change-opacity, чтобы видеокарта подготовилась к ховеру заранее
-                                className="object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 will-change-opacity"
-                                referrerPolicy="no-referrer"
-                            />
+                            {/* Hover картинка: рендерим только если не мобилка */}
+                            {!isMobile && (
+                                <Image
+                                    src={project.hoverImg}
+                                    alt={`${project.title} hover`}
+                                    fill
+                                    quality={75}
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    // Добавили will-change-opacity, чтобы видеокарта подготовилась к ховеру заранее
+                                    className="object-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100 will-change-opacity"
+                                    referrerPolicy="no-referrer"
+                                />
+                            )}
 
                             {/* Градиент для текста */}
-                            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none will-change-opacity" />
+                            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/60 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none will-change-opacity" />
 
                             {/* Тексты */}
-                            <div className="absolute left-4 bottom-4 z-30 overflow-hidden flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none will-change-opacity">
+                            <div className="absolute left-4 bottom-4 z-30 overflow-hidden flex items-end opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 pointer-events-none will-change-opacity">
                                 <h3 className="text-white text-xl md:text-2xl font-medium tracking-tight">
                                     {project.title}
                                 </h3>
                             </div>
-                            <div className="absolute right-4 bottom-4 z-30 overflow-hidden flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-right pointer-events-none will-change-opacity">
+                            <div className="absolute right-4 bottom-4 z-30 overflow-hidden flex items-end opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 text-right pointer-events-none will-change-opacity">
                                 <p className="text-white text-sm md:text-xl font-medium tracking-tight">
                                     {project.type}
                                 </p>

@@ -10,6 +10,7 @@ import {
     Database,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const tools = [
     { name: "Next.js", desc: "Full-stack React framework", icon: Layout },
@@ -22,6 +23,7 @@ const tools = [
 
 export default function Tools() {
     const t = useTranslations("Tools");
+    const isMobile = useIsMobile();
 
     return (
         <section id="tools" className="py-16 md:py-24 px-4 md:px-8">
@@ -45,7 +47,7 @@ export default function Tools() {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 0.6, delay: i * 0.1 }}
+                                transition={{ duration: 0.6, delay: isMobile ? 0 : i * 0.1 }}
                                 className="bg-zinc-100 p-8 md:p-10 flex items-center justify-between"
                             >
                                 <div className="flex items-center gap-6">

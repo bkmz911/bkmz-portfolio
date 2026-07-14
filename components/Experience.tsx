@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { Download } from "lucide-react";
 import BlurText from "./BlurText";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const experiences = [
     {
@@ -38,6 +39,7 @@ const experiences = [
 
 export default function Experience() {
     const t = useTranslations("Experience");
+    const isMobile = useIsMobile();
 
     return (
         <section id="about" className="py-24 md:py-48 px-4 md:px-8">
@@ -79,7 +81,7 @@ export default function Experience() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: i * 0.1 }}
+                            transition={{ duration: 0.6, delay: isMobile ? 0 : i * 0.1 }}
                             className="border-t border-zinc-200 py-6 md:py-10"
                         >
                             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">

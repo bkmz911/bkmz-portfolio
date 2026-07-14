@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export default function Footer() {
     const containerRef = useRef<HTMLElement>(null);
@@ -16,6 +17,7 @@ export default function Footer() {
     const contentY = useTransform(scrollYProgress, [0, 1], ["10%", "-5%"]);
 
     const t = useTranslations("Footer");
+    const isMobile = useIsMobile();
 
     return (
         <section
@@ -26,7 +28,7 @@ export default function Footer() {
             {/* Left side Image with Parallax */}
             <div className="w-full lg:w-1/2 h-full relative overflow-hidden">
                 <motion.div
-                    style={{ y: imageY }}
+                    style={{ y: isMobile ? 0 : imageY }}
                     className="absolute w-[100%] h-[100%]"
                 >
                     <Image
@@ -47,7 +49,7 @@ export default function Footer() {
 
             {/* Right side Content */}
             <motion.div
-                style={{ y: contentY }}
+                style={{ y: isMobile ? 0 : contentY }}
                 className="w-full lg:w-1/2 flex flex-col gap-10 p-8 lg:p-16 lg:px-24 lg:py-16 justify-between h-[60vh] lg:h-full relative z-10 "
             >
                 <div className="items-start flex flex-col">

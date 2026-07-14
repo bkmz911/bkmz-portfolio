@@ -98,7 +98,7 @@ export default function Hero() {
                     src="/hero-avatar-desktop.avif"
                     alt="Ilyha Bkmz Portrait"
                     fill
-                    className="2xl:block object-cover object-center filter grayscale contrast-125"
+                    className="hidden 2xl:block object-cover object-center filter grayscale contrast-125"
                     priority
                     referrerPolicy="no-referrer"
                 />

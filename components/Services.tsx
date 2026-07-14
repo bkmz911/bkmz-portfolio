@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import BlurText from "./BlurText";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const servicesList = [
     {
@@ -45,6 +46,7 @@ const servicesList = [
 
 export default function Services() {
     const t = useTranslations("Services");
+    const isMobile = useIsMobile();
 
     return (
         <section id="services" className="py-24 md:py-48 px-4 md:px-8">
@@ -75,7 +77,7 @@ export default function Services() {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 0.6, delay: iG * 0.1 }}
+                                transition={{ duration: 0.6, delay: isMobile ? 0 : iG * 0.1 }}
                                 className="mb-8"
                             >
                                 <div className="flex justify-between items-center pb-4 font-medium">
