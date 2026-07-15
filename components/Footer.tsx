@@ -89,7 +89,7 @@ export default function Footer() {
                             href="tel:+79536430866"
                             className="hover:text-muted-foreground/95 transition-colors"
                         >
-                            +7 (953) 643-0866
+                            +7 (953) 643-08-66
                         </a>
                         <a
                             href="mailto:i.a.4esnokov@gmail.com"

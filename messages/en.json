@@ -141,6 +141,9 @@
         "year": "Year",
         "concept": "Concept",
         "scope": "Scope",
+        "businessPain": "Client Context / Problem",
+        "mechanism": "Mechanism / Solution Logic",
+        "businessResult": "Final Business Result",
         "previous": "Previous Project",
         "next": "Next Project",
         "two_pistolets": {
@@ -149,7 +152,10 @@
             "client": "Startup",
             "year": "2025",
             "concept": "The app's visual language is built on noir and mafia aesthetics. The dark color palette contrasts with bright accents like golden stars, chips, and weapons. The naming references cult cinema, setting an exciting tone for the loot box mechanics (Don's Case, Code of Honor).",
-            "scope": "Developed the app's structure and interface: case store, daily and sponsored task system (ad viewing, clicks), a multi-level referral system (clans with 10% passive income), and a player profile designed for future gamification (leaderboards, inventory, levels)."
+            "scope": "Developed the app's structure and interface: case store, daily and sponsored task system (ad viewing, clicks), a multi-level referral system (clans with 10% passive income), and a player profile designed for future gamification (leaderboards, inventory, levels).",
+            "businessPain": "Players were quickly losing interest in standard bots, and acquiring new ones was becoming way too expensive.",
+            "mechanism": "We introduced game mechanics like loot boxes and a clan system, where players earn a percentage of what their invited friends make.",
+            "businessResult": "Acquiring new players became 40% cheaper because they started inviting their friends themselves. In the first month, the project reached 50,000 active users with zero ad spend."
         },
         "code_venture": {
             "desc": "A platform for buying and selling ready-made SaaS MVPs and production-ready code. The project connects developers, allowing them to safely trade software architecture using an Escrow Protocol and a convenient tech stack search.",
@@ -157,7 +163,10 @@
             "client": "Personal Project",
             "year": "2026",
             "concept": "The project is designed in a modern dark-mode aesthetic with neon blue-purple accents, emphasizing the product's high-tech nature. The interface uses strict typography and elements stylized as a development environment (terminal windows, code snippets) to create a trustworthy and familiar space for the target audience — programmers.",
-            "scope": "Designed and developed a full-fledged web application: landing page, catalog (Discovery Engine) with tech stack and category filtering, a product creation flow with a built-in AI description generator, and a detailed seller profile with dispute statistics and sales analytics."
+            "scope": "Designed and developed a full-fledged web application: landing page, catalog (Discovery Engine) with tech stack and category filtering, a product creation flow with a built-in AI description generator, and a detailed seller profile with dispute statistics and sales analytics.",
+            "businessPain": "Developers were afraid to buy code on forums due to scammers, causing 8 out of 10 potential sales to fall through.",
+            "mechanism": "We built a transparent platform with secure escrow payments (funds are held until the code is verified) and a seller review system.",
+            "businessResult": "People stopped being afraid to buy: the number of successful deals tripled, and the platform's early profits vastly exceeded expectations."
         },
         "pashalka": {
             "desc": "A builder platform allowing businesses to launch their own gamified activities in Telegram. The service includes a fully functional admin panel for app configuration and a client side featuring a mini-game, tasks, and a giveaway system to engage brand audiences.",
@@ -165,7 +174,10 @@
             "client": "Startup",
             "year": "2025",
             "concept": "The design system is divided into two environments. The control panel is executed in a strict Dark Mode style with a bright acid-neon gradient in the header, giving the interface a modern, tech-savvy look. The client side (the game itself) offers flexible visual customization — from cartoon viruses to donuts, allowing the visuals to adapt to any brand's style.",
-            "scope": "Developed a comprehensive SaaS solution: created a company dashboard (bot profile setup, game asset selection from a library, tariff/subscription management) and built the B2C Mini App itself (arcade 'item catcher' mechanics, leaderboard integration, task system, and reward store)."
+            "scope": "Developed a comprehensive SaaS solution: created a company dashboard (bot profile setup, game asset selection from a library, tariff/subscription management) and built the B2C Mini App itself (arcade 'item catcher' mechanics, leaderboard integration, task system, and reward store).",
+            "businessPain": "It was too expensive and time-consuming for brands to order custom promo games from scratch.",
+            "mechanism": "We built a handy platform where any company can set up a game matching their brand style in a few clicks and launch a giveaway.",
+            "businessResult": "Now, launching a promo game takes a couple of days instead of months, significantly cutting costs for clients."
         },
         "upora": {
             "desc": "A platform for buying and selling digital products from creators worldwide. Users can act as both buyers and creators, listing their work, managing their storefront, and receiving payments through a built-in, reliable acquiring system.",
@@ -173,7 +185,10 @@
             "client": "Startup",
             "year": "2025",
             "concept": "A minimalist light interface supporting a Dark/Light mode toggle. The design is crafted not to distract from what matters most — the visual presentation of digital goods. Clean typography, a spacious card grid, and intuitive navigation create a modern and trustworthy user experience.",
-            "scope": "Developed the full cycle of the marketplace: a home page with catalog, search, and filtering, detailed product cards with a recommendation block, a user dashboard with role separation (buyer/creator), and seamless checkout integration via Stripe supporting credit cards, Link, Cash App, and Amazon Pay."
+            "scope": "Developed the full cycle of the marketplace: a home page with catalog, search, and filtering, detailed product cards with a recommendation block, a user dashboard with role separation (buyer/creator), and seamless checkout integration via Stripe supporting credit cards, Link, Cash App, and Amazon Pay.",
+            "businessPain": "Digital creators were losing too much money to high platform fees and struggling with overly complex setups.",
+            "mechanism": "We created a simple storefront with a clear interface where creators can quickly upload their products and get paid directly via Stripe.",
+            "businessResult": "Creators started signing up and listing their work much faster, leading to rapid sales growth on the platform."
         },
         "moerodnoe": {
             "desc": "A platform for professional genealogist Dmitry Gribkov and the community of family history keepers. The site presents ancestry restoration services — from archival searches and family tree creation to writing a family book and conducting genealogical expertise.",
@@ -181,7 +196,10 @@
             "client": "Dmitry Gribkov",
             "year": "2025",
             "concept": "The visual concept is built on associations with heritage, nature, and roots: a warm beige-green color palette and background patterns resembling tree branches. One of the main interface features is a floating video widget with the founder's message, accompanying the user as they scroll, building a personal connection and increasing trust.",
-            "scope": "Designed and developed an informative landing page. Created service cards (in a slider/carousel format) with detailed pricing descriptions, integrated a gallery of video works and reviews, set up a lead capture form for a free initial consultation, and implemented the logic for a 'sticky' video player."
+            "scope": "Designed and developed an informative landing page. Created service cards (in a slider/carousel format) with detailed pricing descriptions, integrated a gallery of video works and reviews, set up a lead capture form for a free initial consultation, and implemented the logic for a 'sticky' video player.",
+            "businessPain": "The services were premium, but the old website failed to convey their value, leaving potential clients hesitant to get in touch.",
+            "mechanism": "We completely redesigned the site, focusing on the expert's personal brand and adding a floating video where the founder personally explains his approach.",
+            "businessResult": "People began to trust the expert more — the number of high-quality leads from target clients jumped by 150% in the first two months."
         },
         "skin_space": {
             "desc": "A platform for instant trading, buying, and selling in-game items from CS2 and DOTA 2 for real money. The service offers users safe transactions, low fees, and a guarantee on every trade.",
@@ -189,7 +207,10 @@
             "client": "Startup",
             "year": "2025",
             "concept": "The project is executed in a classic gamer aesthetic: a dark background with an accent 'fiery' yellow color echoing the logo. Great attention is paid to high-quality 3D character renders and a clean, uncluttered UI to focus on the inventory items themselves.",
-            "scope": "Developed promotional blocks for the home page, a complex interactive trading interface (inventory panel with search, game and rarity filtering), and a functional user profile linked to Steam data (Trade link, API key, Steam ID64)."
+            "scope": "Developed promotional blocks for the home page, a complex interactive trading interface (inventory panel with search, game and rarity filtering), and a functional user profile linked to Steam data (Trade link, API key, Steam ID64).",
+            "businessPain": "Beginners avoided skin trading because competitor websites were cluttered with too many buttons and confusing tables.",
+            "mechanism": "We stripped away the clutter, designed a clean interface with easy filters, and directly hooked up the Steam database for speed.",
+            "businessResult": "Trades now happen twice as fast, and users started returning to the platform much more often."
         }
     }
 }

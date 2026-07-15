@@ -113,9 +113,42 @@ export default function ProjectDetail() {
                 ))}
             </div>
 
-            {/* Details (Concept & Scope) */}
+            {/* Details (Concept & Scope & Business Logic) */}
             <div className="py-24 md:py-48 px-4 md:px-8">
-                <div className="w-full md:w-1/2 ml-auto lg:pr-24">
+                <div className="w-full md:w-[60%] lg:w-[50%] ml-auto lg:pr-24">
+                    
+                    {t(`${slug}.businessPain`) !== `ProjectDetail.${slug}.businessPain` && t(`${slug}.businessPain`) !== "" && (
+                        <div className="mb-20 md:mb-32 flex flex-col gap-10 md:gap-12 border-l-2 border-zinc-200 pl-6 md:pl-10 relative">
+                            {/* Decorative accent */}
+                            <div className="absolute -left-[2px] top-0 w-[2px] h-1/3 bg-[#111]" />
+                            
+                            <div>
+                                <h3 className="text-sm md:text-base font-medium tracking-wider mb-3 md:mb-4 text-zinc-500 uppercase">
+                                    {t("businessPain")}
+                                </h3>
+                                <p className="text-lg md:text-xl text-[#111] leading-relaxed font-medium">
+                                    {t(`${slug}.businessPain`)}
+                                </p>
+                            </div>
+                            <div>
+                                <h3 className="text-sm md:text-base font-medium tracking-wider mb-3 md:mb-4 text-zinc-500 uppercase">
+                                    {t("mechanism")}
+                                </h3>
+                                <p className="text-lg md:text-xl text-[#111] leading-relaxed font-medium">
+                                    {t(`${slug}.mechanism`)}
+                                </p>
+                            </div>
+                            <div>
+                                <h3 className="text-sm md:text-base font-medium tracking-wider mb-3 md:mb-4 text-zinc-500 uppercase">
+                                    {t("businessResult")}
+                                </h3>
+                                <p className="text-xl md:text-2xl text-[#111] leading-relaxed font-medium">
+                                    {t(`${slug}.businessResult`)}
+                                </p>
+                            </div>
+                        </div>
+                    )}
+
                     <div className="mb-16 md:mb-24">
                         <h3 className="text-3xl md:text-4xl font-medium tracking-tight mb-6">
                             {t("concept")}
