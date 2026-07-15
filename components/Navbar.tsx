@@ -101,28 +101,28 @@ export default function Navbar({
                             {/* Внутренний враппер со ссылками */}
                             <div className="flex flex-col md:flex-row items-end md:items-center gap-4 md:gap-6 pl-6 pr-5 md:pr-2 pb-6 md:pb-0 md:h-14 font-medium text-[15px] md:text-base whitespace-nowrap">
                                 <Link
-                                    href="#projects"
+                                    href="/#projects"
                                     onClick={toggleMenu}
                                     className="hover:text-zinc-500 transition-colors"
                                 >
                                     {t("projects")}
                                 </Link>
                                 <Link
-                                    href="#services"
+                                    href="/#services"
                                     onClick={toggleMenu}
                                     className="hover:text-zinc-500 transition-colors"
                                 >
                                     {t("services")}
                                 </Link>
                                 <Link
-                                    href="#about"
+                                    href="/#about"
                                     onClick={toggleMenu}
                                     className="hover:text-zinc-500 transition-colors"
                                 >
                                     {t("about")}
                                 </Link>
                                 <Link
-                                    href="#contact"
+                                    href="/#contact"
                                     onClick={toggleMenu}
                                     className="hover:text-zinc-500 transition-colors"
                                 >

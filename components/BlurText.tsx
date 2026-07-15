@@ -16,12 +16,10 @@ export default function BlurText({ text, highlightText, className = '' }: BlurTe
   const highlightWords = highlightText ? highlightText.split(' ') : [];
   
   const initialAnim = isMobile 
-    ? { opacity: 0, y: 10 } 
+    ? { opacity: 0, filter: 'blur(0px)', y: 10 } 
     : { opacity: 0, filter: 'blur(8px)', y: 10 };
     
-  const whileInViewAnim = isMobile 
-    ? { opacity: 1, y: 0 } 
-    : { opacity: 1, filter: 'blur(0px)', y: 0 };
+  const whileInViewAnim = { opacity: 1, filter: 'blur(0px)', y: 0 };
   
   return (
     <h2 className={className}>
