@@ -45,13 +45,27 @@ export default function Experience() {
         <section id="about" className="py-24 md:py-48 px-4 md:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Intro text merged from old About section */}
-                <div className="mb-32 md:mb-48">
+                <div className="mb-24 md:mb-32">
                     <BlurText
                         text={t("desc1")}
                         highlightText={t("desc2")}
                         className="text-2xl md:text-4xl lg:text-[3.5rem] leading-[1.05] tracking-tighter font-medium"
                     />
                 </div>
+
+                {/* Marketing Block */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="mb-24 md:mb-32 bg-zinc-50 border border-zinc-200 rounded-[24px] p-8 md:p-12 relative overflow-hidden"
+                >
+                    <div className="absolute top-0 left-0 w-2 h-full bg-primary" />
+                    <p className="text-xl md:text-2xl text-primary leading-relaxed font-medium">
+                        {t("marketingContext")}
+                    </p>
+                </motion.div>
 
                 {/* Experience Header */}
                 <motion.div

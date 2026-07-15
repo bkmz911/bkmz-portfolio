@@ -59,11 +59,20 @@ export default function Hero() {
                         delay: 0.5,
                         ease: [0.16, 1, 0.3, 1],
                     }}
-                    className="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-12 md:mt-auto font-medium"
+                    className="flex flex-col sm:flex-row justify-between items-start sm:items-end mt-12 md:mt-auto font-medium"
                 >
-                    <p className="text-lg md:text-xl max-w-md text-primary">
-                        {t("subtitle")}
-                    </p>
+                    <div className="flex flex-col gap-6 lg:gap-8 mb-6 sm:mb-0">
+                        <p className="text-lg md:text-xl max-w-md text-primary">
+                            {t("subtitle")}
+                        </p>
+                        <a 
+                            href="#contact" 
+                            className="inline-flex items-center justify-center bg-primary text-background hover:bg-primary/90 transition-colors px-6 py-3 rounded-full font-medium w-fit text-sm md:text-base"
+                        >
+                            {t("cta")}
+                        </a>
+                    </div>
+
                     <div className="flex items-center text-md gap-2 mt-4 sm:mt-0">
                         <span>{t("projects")}</span>
                         <svg
