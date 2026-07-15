@@ -11,12 +11,14 @@
     },
     "Hero": {
         "subtitle": "Developing websites and web applications that solve your business goals",
-        "projects": "Selected Works"
+        "projects": "Selected Works",
+        "cta": "Get started"
     },
     "Services": {
         "title": "Services",
         "desc1": "I build everything from landing pages and business websites to complex web platforms and Telegram Mini Apps.",
         "desc2": "I take care of the technical routine, so you can focus on growing your product.",
+        "cta": "Get started",
         "services": {
             "service1": {
                 "title": "Web Development (Frontend)",
@@ -46,6 +48,7 @@
     },
     "Experience": {
         "title": "Experience",
+        "marketingContext": "I don't just write code and draw pretty interfaces. My main goal is to solve your business problems: lower customer acquisition cost, boost conversion rates, and build trust with your audience. I dive deep into analytics to engineer products that bring real ROI.",
         "download-btn": "Download Resume",
         "desc1": "My name is Ilya, and I am a web developer. For over 3 years, I've been helping businesses build and launch their projects online:",
         "desc2": "building high-quality applications so your users stay happy, and you have peace of mind regarding the result.",
