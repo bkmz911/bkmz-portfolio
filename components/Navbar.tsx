@@ -19,6 +19,7 @@ export default function Navbar({
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
+    const isProjectPage = pathname.includes('/project/');
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -100,34 +101,46 @@ export default function Navbar({
                         >
                             {/* Внутренний враппер со ссылками */}
                             <div className="flex flex-col md:flex-row items-end md:items-center gap-4 md:gap-6 pl-6 pr-5 md:pr-2 pb-6 md:pb-0 md:h-14 font-medium text-[15px] md:text-base whitespace-nowrap">
-                                <Link
-                                    href="/#projects"
-                                    onClick={toggleMenu}
-                                    className="hover:text-zinc-500 transition-colors"
-                                >
-                                    {t("projects")}
-                                </Link>
-                                <Link
-                                    href="/#services"
-                                    onClick={toggleMenu}
-                                    className="hover:text-zinc-500 transition-colors"
-                                >
-                                    {t("services")}
-                                </Link>
-                                <Link
-                                    href="/#about"
-                                    onClick={toggleMenu}
-                                    className="hover:text-zinc-500 transition-colors"
-                                >
-                                    {t("about")}
-                                </Link>
-                                <Link
-                                    href="/#contact"
-                                    onClick={toggleMenu}
-                                    className="hover:text-zinc-500 transition-colors"
-                                >
-                                    {t("contact")}
-                                </Link>
+                                {isProjectPage ? (
+                                    <Link
+                                        href="/"
+                                        onClick={toggleMenu}
+                                        className="hover:text-zinc-500 transition-colors"
+                                    >
+                                        {t("home")}
+                                    </Link>
+                                ) : (
+                                    <>
+                                        <Link
+                                            href="/#projects"
+                                            onClick={toggleMenu}
+                                            className="hover:text-zinc-500 transition-colors"
+                                        >
+                                            {t("projects")}
+                                        </Link>
+                                        <Link
+                                            href="/#services"
+                                            onClick={toggleMenu}
+                                            className="hover:text-zinc-500 transition-colors"
+                                        >
+                                            {t("services")}
+                                        </Link>
+                                        <Link
+                                            href="/#about"
+                                            onClick={toggleMenu}
+                                            className="hover:text-zinc-500 transition-colors"
+                                        >
+                                            {t("about")}
+                                        </Link>
+                                        <Link
+                                            href="/#contact"
+                                            onClick={toggleMenu}
+                                            className="hover:text-zinc-500 transition-colors"
+                                        >
+                                            {t("contact")}
+                                        </Link>
+                                    </>
+                                )}
 
                                 {/* Секция переключения языка с адаптивной линией-разделителем */}
                                 <div className="w-full md:w-auto flex justify-end md:block pt-3 md:pt-0 mt-1 md:mt-0 border-t md:border-t-0 md:border-l border-zinc-200 md:pl-6 md:ml-2">
