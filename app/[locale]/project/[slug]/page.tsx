@@ -2,14 +2,14 @@
 
 import { Link } from "@/i18n/routing";
 import Footer from "@/components/Footer";
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { useParams, notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import { getProjectBySlug } from "@/data/projects";
 import ProjectImageCard from "@/components/ProjectImageCard";
 import ProjectPagination from "@/components/ProjectPagination";
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function ProjectDetail() {
     const params = useParams();
@@ -17,6 +17,28 @@ export default function ProjectDetail() {
     const projectData = getProjectBySlug(slug);
 
     const t = useTranslations("ProjectDetail");
+
+    const containerRef = useRef<HTMLDivElement>(null);
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start 40%", "end 60%"],
+    });
+
+    const [isDesktop, setIsDesktop] = useState(false);
+    useEffect(() => {
+        const check = () => setIsDesktop(window.innerWidth >= 768);
+        check();
+        window.addEventListener("resize", check);
+        return () => window.removeEventListener("resize", check);
+    }, []);
+
+    // Slider moves from 0% to 200% (covering the 3 items)
+    const sliderY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+
+    // Opacities for the 3 items
+    const opacity1 = useTransform(scrollYProgress, [0, 0.25, 0.35], [1, 1, 0.3]);
+    const opacity2 = useTransform(scrollYProgress, [0.25, 0.35, 0.65, 0.75], [0.3, 1, 1, 0.3]);
+    const opacity3 = useTransform(scrollYProgress, [0.65, 0.75, 1], [0.3, 1, 1]);
 
     if (!projectData) {
         return notFound();
@@ -118,33 +140,40 @@ export default function ProjectDetail() {
                 <div className="w-full md:w-[60%] lg:w-[50%] ml-auto lg:pr-24">
                     
                     {t(`${slug}.businessPain`) !== `ProjectDetail.${slug}.businessPain` && t(`${slug}.businessPain`) !== "" && (
-                        <div className="mb-20 md:mb-32 flex flex-col gap-10 md:gap-12 border-l-2 border-zinc-200 pl-6 md:pl-10 relative">
-                            {/* Decorative accent */}
-                            <div className="absolute -left-[2px] top-0 w-[2px] h-1/3 bg-[#111]" />
-                            
-                            <div>
-                                <h3 className="text-sm md:text-base font-medium tracking-wider mb-3 md:mb-4 text-zinc-500 uppercase">
-                                    {t("businessPain")}
-                                </h3>
-                                <p className="text-lg md:text-xl text-[#111] leading-relaxed font-medium">
-                                    {t(`${slug}.businessPain`)}
-                                </p>
-                            </div>
-                            <div>
-                                <h3 className="text-sm md:text-base font-medium tracking-wider mb-3 md:mb-4 text-zinc-500 uppercase">
-                                    {t("mechanism")}
-                                </h3>
-                                <p className="text-lg md:text-xl text-[#111] leading-relaxed font-medium">
-                                    {t(`${slug}.mechanism`)}
-                                </p>
-                            </div>
-                            <div>
-                                <h3 className="text-sm md:text-base font-medium tracking-wider mb-3 md:mb-4 text-zinc-500 uppercase">
-                                    {t("businessResult")}
-                                </h3>
-                                <p className="text-xl md:text-2xl text-[#111] leading-relaxed font-medium">
-                                    {t(`${slug}.businessResult`)}
-                                </p>
+                        <div ref={containerRef} className="md:h-[250vh] relative mb-20 md:mb-32">
+                            <div className="md:sticky md:top-32 md:h-[calc(100vh-12rem)] flex flex-col justify-center">
+                                <div className="flex flex-col gap-10 md:gap-12 border-l-2 border-zinc-200 pl-6 md:pl-10 relative">
+                                    {/* Decorative accent */}
+                                    <motion.div 
+                                        style={isDesktop ? { y: sliderY } : {}}
+                                        className="absolute -left-[2px] top-0 w-[2px] h-1/3 bg-[#111]" 
+                                    />
+                                    
+                                    <motion.div style={isDesktop ? { opacity: opacity1 } : {}}>
+                                        <h3 className="text-sm md:text-base font-medium tracking-wider mb-3 md:mb-4 text-zinc-500 uppercase">
+                                            {t("businessPain")}
+                                        </h3>
+                                        <p className="text-lg md:text-xl text-[#111] leading-relaxed font-medium">
+                                            {t(`${slug}.businessPain`)}
+                                        </p>
+                                    </motion.div>
+                                    <motion.div style={isDesktop ? { opacity: opacity2 } : {}}>
+                                        <h3 className="text-sm md:text-base font-medium tracking-wider mb-3 md:mb-4 text-zinc-500 uppercase">
+                                            {t("mechanism")}
+                                        </h3>
+                                        <p className="text-lg md:text-xl text-[#111] leading-relaxed font-medium">
+                                            {t(`${slug}.mechanism`)}
+                                        </p>
+                                    </motion.div>
+                                    <motion.div style={isDesktop ? { opacity: opacity3 } : {}}>
+                                        <h3 className="text-sm md:text-base font-medium tracking-wider mb-3 md:mb-4 text-zinc-500 uppercase">
+                                            {t("businessResult")}
+                                        </h3>
+                                        <p className="text-xl md:text-2xl text-[#111] leading-relaxed font-medium">
+                                            {t(`${slug}.businessResult`)}
+                                        </p>
+                                    </motion.div>
+                                </div>
                             </div>
                         </div>
                     )}
