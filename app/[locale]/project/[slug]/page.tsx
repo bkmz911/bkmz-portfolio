@@ -161,11 +161,11 @@ export default function ProjectDetail() {
             </div>
 
             {/* Details (Concept & Scope & Business Logic) */}
-            <div className="py-24 md:py-48 px-4 md:px-8">
+            <div className="py-12 md:py-24 px-4 md:px-8">
                 <div className="w-full md:w-[60%] lg:w-[50%] ml-auto lg:pr-24">
                     
                     {t(`${slug}.businessPain`) !== `ProjectDetail.${slug}.businessPain` && t(`${slug}.businessPain`) !== "" && (
-                        <div ref={containerRef} className="md:h-[85vh] relative mb-4 md:mb-8">
+                        <div ref={containerRef} className="md:h-[75vh] relative mb-12 md:mb-24">
                             <div className="md:sticky md:top-32 h-auto flex flex-col justify-start py-4">
                                 <div className="flex flex-col gap-10 md:gap-12 border-l-2 border-zinc-200 pl-6 md:pl-10 relative">
                                     {/* Decorative accent */}
@@ -203,7 +203,7 @@ export default function ProjectDetail() {
                         </div>
                     )}
 
-                    <div className="mb-16 md:mb-24">
+                    <div className="mb-8 md:mb-16">
                         <h3 className="text-3xl md:text-4xl font-medium tracking-tight mb-6">
                             {t("concept")}
                         </h3>
