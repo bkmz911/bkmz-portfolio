@@ -122,7 +122,7 @@ export default function Footer() {
                             className="hover:opacity-80 transition-opacity"
                         >
                             <Image 
-                                src="/icons/whatsapp4.svg" 
+                                src="/icons/whatsapp.svg" 
                                 alt="WhatsApp" 
                                 width={48} 
                                 height={48} 
