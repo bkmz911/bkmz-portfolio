@@ -27,11 +27,7 @@ export default function Hero() {
                     }}
                 >
                     <div className="flex flex-col text-[16vw] md:text-[18.5vw] leading-[0.78] tracking-tighter font-medium relative z-20 -ml-1 md:-ml-[0.05em]">
-                        {/* Invisible placeholder to prevent layout shift */}
-                        <div className="invisible flex flex-col">
-                            <span className="block">Ilyha</span>
-                            <span className="block">Bkmz</span>
-                        </div>
+
 
                         {!isScrolled && (
                             <div className="absolute top-0 left-0 flex flex-col w-full text-primary">
@@ -59,7 +55,7 @@ export default function Hero() {
                         delay: 0.5,
                         ease: [0.16, 1, 0.3, 1],
                     }}
-                    className="flex flex-col sm:flex-row justify-between items-start sm:items-end mt-12 md:mt-auto font-medium gap-8 sm:gap-0"
+                    className="flex flex-col sm:flex-row justify-between items-start sm:items-end mt-[25vw] md:mt-[15vw] xl:mt-auto font-medium gap-8 sm:gap-0"
                 >
                     <div className="flex flex-col gap-6 lg:gap-8">
                         <p className="text-lg md:text-xl max-w-md text-primary">
