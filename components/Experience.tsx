@@ -53,20 +53,7 @@ export default function Experience() {
                     />
                 </div>
 
-                {/* Marketing Block */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="mb-24 md:mb-32 bg-zinc-50 border border-zinc-200 rounded-[24px] p-8 md:p-12 relative overflow-hidden"
-                >
-                    <div className="absolute top-0 left-0 w-2 h-full bg-primary" />
-                    <p className="text-xl md:text-2xl text-primary leading-relaxed font-medium">
-                        {t("marketingContext")}
-                    </p>
-                </motion.div>
-
+                {/* Marketing Block removed */}
                 {/* Experience Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

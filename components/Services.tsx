@@ -102,20 +102,7 @@ export default function Services() {
                         ))}
                     </div>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                        className="mt-16 md:mt-24 flex justify-start"
-                    >
-                        <a 
-                            href="#contact" 
-                            className="inline-flex items-center justify-center bg-primary text-background hover:bg-primary/90 transition-colors px-8 py-4 rounded-full font-medium text-lg"
-                        >
-                            {t("cta")}
-                        </a>
-                    </motion.div>
+                    {/* CTA button removed */}
                 </div>
             </div>
         </section>
