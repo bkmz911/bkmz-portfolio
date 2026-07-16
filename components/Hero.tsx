@@ -66,7 +66,7 @@ export default function Hero() {
                             <span>{t("projects")}</span>
                             <Image src="/icons/arrow-down.svg" alt="Arrow" width={24} height={24} />
                         </div>
-                    </>
+                    </div>
 
                     <a 
                         href="#contact" 
