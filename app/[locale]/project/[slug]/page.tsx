@@ -140,8 +140,8 @@ export default function ProjectDetail() {
                 <div className="w-full md:w-[60%] lg:w-[50%] ml-auto lg:pr-24">
                     
                     {t(`${slug}.businessPain`) !== `ProjectDetail.${slug}.businessPain` && t(`${slug}.businessPain`) !== "" && (
-                        <div ref={containerRef} className="md:h-[250vh] relative mb-20 md:mb-32">
-                            <div className="md:sticky md:top-32 md:h-[calc(100vh-12rem)] flex flex-col justify-center">
+                        <div ref={containerRef} className="md:h-[120vh] relative mb-12 md:mb-20">
+                            <div className="md:sticky md:top-32 h-auto flex flex-col justify-start py-4">
                                 <div className="flex flex-col gap-10 md:gap-12 border-l-2 border-zinc-200 pl-6 md:pl-10 relative">
                                     {/* Decorative accent */}
                                     <motion.div 
