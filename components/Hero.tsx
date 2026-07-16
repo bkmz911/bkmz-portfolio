@@ -99,7 +99,7 @@ export default function Hero() {
                     ease: [0.16, 1, 0.3, 1],
                     delay: 0.6,
                 }}
-                className="w-full lg:w-1/2 aspect-[4/5] lg:aspect-auto lg:min-h-0 relative block shrink-0 overflow-hidden"
+                className="w-full lg:w-1/2 flex-1 lg:flex-none aspect-[4/5] lg:aspect-auto lg:min-h-0 relative block shrink-0 overflow-hidden"
             >
                 <Image
                     src="/hero-avatar-desktop.avif"
