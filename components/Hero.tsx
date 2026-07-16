@@ -55,7 +55,7 @@ export default function Hero() {
                         delay: 0.5,
                         ease: [0.16, 1, 0.3, 1],
                     }}
-                    className="flex flex-col sm:flex-row justify-between items-start sm:items-end mt-[25vw] md:mt-[15vw] xl:mt-auto font-medium gap-8 sm:gap-0"
+                    className="flex flex-col-reverse sm:flex-row justify-between items-start sm:items-end mt-[25vw] md:mt-[15vw] xl:mt-auto font-medium gap-8 sm:gap-0"
                 >
                     <div className="flex flex-col gap-6 lg:gap-8">
                         <p className="text-lg md:text-xl max-w-md text-primary">
@@ -64,21 +64,9 @@ export default function Hero() {
                         
                         <div className="flex items-center text-md gap-2">
                             <span>{t("projects")}</span>
-                            <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <path d="M12 5v14" />
-                                <path d="m19 12-7 7-7-7" />
-                            </svg>
+                            <Image src="/icons/arrow-down.svg" alt="Arrow" width={24} height={24} />
                         </div>
-                    </div>
+                    </>
 
                     <a 
                         href="#contact" 

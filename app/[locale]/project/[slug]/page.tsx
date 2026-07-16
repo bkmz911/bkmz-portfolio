@@ -1,6 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/routing";
+import Image from "next/image";
 import Footer from "@/components/Footer";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useParams, notFound } from "next/navigation";
@@ -50,21 +51,9 @@ export default function ProjectDetail() {
             <div className="pt-24 md:pt-32 px-4 md:px-8 mb-8 md:mb-12">
                 <Link
                     href="/"
-                    className="inline-flex items-center text-sm font-medium hover:text-zinc-500 transition-colors gap-1"
+                    className="inline-flex items-center text-sm font-medium hover:text-zinc-500 transition-colors gap-1 group"
                 >
-                    <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <path d="M19 12H5" />
-                        <path d="m12 19-7-7 7-7" />
-                    </svg>
+                    <Image src="/icons/arrow-left.svg" alt="Back" width={16} height={16} className="group-hover:opacity-60 transition-opacity" />
                     {t("back")}
                 </Link>
             </div>
@@ -109,19 +98,7 @@ export default function ProjectDetail() {
                             >
                                 <span className="text-[#111]">{t("link")}</span>
                                 <span className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform flex items-center justify-center">
-                                    <svg
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M7 7h10v10" />
-                                        <path d="M7 17 17 7" />
-                                    </svg>
+                                    <Image src="/icons/arrow-up-right.svg" alt="Link" width={16} height={16} className="group-hover:opacity-60 transition-opacity" />
                                 </span>
                             </a>
                         )}
