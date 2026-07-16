@@ -50,7 +50,7 @@ export default function Footer() {
             {/* Right side Content */}
             <motion.div
                 style={{ y: isMobile ? 0 : contentY }}
-                className="w-full lg:w-1/2 flex flex-col gap-10 p-8 lg:p-16 lg:px-24 lg:py-16 justify-between h-[60vh] lg:h-full relative z-10 "
+                className="w-full lg:w-1/2 flex flex-col gap-10 p-8 lg:p-16 lg:px-24 lg:py-16 justify-between h-[65vh] lg:h-full relative z-10 "
             >
                 <div className="items-start flex flex-col">
                     <motion.h2
@@ -82,7 +82,7 @@ export default function Footer() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.4 }}
-                    className="flex flex-row justify-between items-start sm:items-center gap-12 sm:gap-0 font-medium pb-8 lg:pb-0"
+                    className="flex flex-row justify-between items-center flex-wrap gap-10 sm:gap-5 font-medium pb-8 lg:pb-0"
                 >
                     <div className="flex flex-col gap-1 text-lg lg:text-[1.3rem] xl:text-[1.4rem] tracking-tight">
                         <a
@@ -122,7 +122,7 @@ export default function Footer() {
                             className="hover:opacity-80 transition-opacity"
                         >
                             <Image 
-                                src="/icons/whatsapp.svg" 
+                                src="/icons/whatsapp4.svg" 
                                 alt="WhatsApp" 
                                 width={48} 
                                 height={48} 
