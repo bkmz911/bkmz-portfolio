@@ -55,22 +55,31 @@ export default function Hero() {
                         delay: 0.5,
                         ease: [0.16, 1, 0.3, 1],
                     }}
-                    className="flex flex-col-reverse sm:flex-row justify-between items-start sm:items-end mt-[25vw] md:mt-[15vw] xl:mt-auto font-medium gap-8 sm:gap-0"
+                    className="flex flex-col sm:flex-row justify-between items-start sm:items-end mt-[25vw] md:mt-[15vw] xl:mt-auto font-medium gap-8 sm:gap-0 w-full"
                 >
-                    <div className="flex flex-col gap-6 lg:gap-8">
+                    <div className="flex flex-col gap-6 lg:gap-8 w-full sm:w-auto">
                         <p className="text-lg md:text-xl max-w-md text-primary">
                             {t("subtitle")}
                         </p>
                         
+                        {/* Mobile Button */}
+                        <a 
+                            href="#contact" 
+                            className="sm:hidden inline-flex items-center justify-center bg-primary text-background hover:bg-primary/90 transition-colors px-6 py-3 rounded-full font-medium w-full text-sm"
+                        >
+                            {t("cta")}
+                        </a>
+
                         <div className="flex items-center text-md gap-2">
                             <span>{t("projects")}</span>
                             <Image src="/icons/arrow-down.svg" alt="Arrow" width={24} height={24} />
                         </div>
                     </div>
 
+                    {/* Desktop Button */}
                     <a 
                         href="#contact" 
-                        className="inline-flex items-center justify-center bg-primary text-background hover:bg-primary/90 transition-colors px-6 py-3 rounded-full font-medium w-full sm:w-fit text-sm md:text-base"
+                        className="hidden sm:inline-flex items-center justify-center bg-primary text-background hover:bg-primary/90 transition-colors px-6 py-3 rounded-full font-medium w-fit text-sm md:text-base"
                     >
                         {t("cta")}
                     </a>
