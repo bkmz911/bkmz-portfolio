@@ -1,6 +1,11 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "motion/react";
+import {
+    motion,
+    useReducedMotion,
+    useScroll,
+    useTransform,
+} from "motion/react";
 import Image from "next/image";
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
@@ -10,27 +15,28 @@ export default function Footer() {
     const containerRef = useRef<HTMLElement>(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
-        offset: ["start end", "end start"],
+        offset: ["start end", "start start"],
     });
 
-    const imageY = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
-    const contentY = useTransform(scrollYProgress, [0, 1], ["10%", "-5%"]);
+    const panelY = useTransform(scrollYProgress, [0, 1], [-600, 0]);
 
     const t = useTranslations("Footer");
     const isMobile = useIsMobile();
+    const reducedMotion = useReducedMotion();
 
     return (
         <section
             id="contact"
             ref={containerRef}
-            className="relative h-screen bg-foreground text-secondary flex flex-col lg:flex-row overflow-hidden"
+            className="relative h-screen overflow-hidden"
         >
-            {/* Left side Image with Parallax */}
-            <div className="w-full lg:w-1/2 h-full relative overflow-hidden">
-                <motion.div
-                    style={{ y: isMobile ? 0 : imageY }}
-                    className="absolute w-[100%] h-[100%]"
-                >
+            <motion.div
+                style={{ y: isMobile || reducedMotion ? 0 : panelY }}
+                className="h-screen bg-foreground text-secondary flex flex-col lg:flex-row"
+            >
+                {/* Left side Image */}
+                <div className="w-full lg:w-1/2 h-full relative overflow-hidden">
+                    <div className="absolute w-[100%] h-[100%]">
                     <Image
                         src="/footer-avatar.avif"
                         alt="Ilya Chesnokov Contact Portrait"
@@ -44,14 +50,11 @@ export default function Footer() {
                         lg:bg-gradient-to-r -> на десктопе работает как раньше (слева-направо) 
                     */}
                     <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-transparent via-[#111]/40 lg:via-[#111]/30 to-[#111]" />
-                </motion.div>
-            </div>
+                    </div>
+                </div>
 
-            {/* Right side Content */}
-            <motion.div
-                style={{ y: isMobile ? 0 : contentY }}
-                className="w-full lg:w-1/2 flex flex-col gap-10 p-8 lg:p-16 lg:px-24 lg:py-16 justify-between h-[65vh] lg:h-full relative z-10 "
-            >
+                {/* Right side Content */}
+                <div className="w-full lg:w-1/2 flex flex-col gap-10 p-8 lg:p-16 lg:px-24 lg:py-16 justify-between h-[65vh] lg:h-full relative z-10 ">
                 <div className="items-start flex flex-col">
                     <motion.h2
                         initial={{ opacity: 0, y: 30 }}
@@ -75,6 +78,22 @@ export default function Footer() {
                     >
                         {t("desc")}
                     </motion.p>
+                    <motion.a
+                        href="https://t.me/Bkmz911"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        initial={{ opacity: 0, y: 16 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.8,
+                            delay: 0.3,
+                            ease: [0.16, 1, 0.3, 1],
+                        }}
+                        className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-base font-medium text-[#111] transition-colors hover:bg-zinc-200"
+                    >
+                        {t("telegram")}
+                    </motion.a>
                 </div>
 
                 <motion.div
@@ -146,6 +165,7 @@ export default function Footer() {
                         </a>
                     </div>
                 </motion.div>
+                </div>
             </motion.div>
         </section>
     );

@@ -26,8 +26,8 @@ export default function Tools() {
     const isMobile = useIsMobile();
 
     return (
-        <section id="tools" className="py-16 md:py-24 px-4 md:px-8">
-            <div className="max-w-7xl mx-auto">
+        <section id="tools" className="py-16 md:py-24 px-4 lg:px-6">
+            <div className="max-w-[1600px] mx-auto">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

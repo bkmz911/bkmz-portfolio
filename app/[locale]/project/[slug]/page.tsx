@@ -196,6 +196,9 @@ export default function ProjectDetail() {
                             {t(`${slug}.scope`)}
                         </p>
                     </div>
+                    <a href="#contact" className="button mt-10 md:mt-14">
+                        {t("cta")}
+                    </a>
                 </div>
             </div>
 

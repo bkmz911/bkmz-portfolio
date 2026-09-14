@@ -16,33 +16,34 @@
     },
     "Services": {
         "title": "Services",
-        "desc1": "I build everything from landing pages and business websites to complex web platforms and Telegram Mini Apps.",
-        "desc2": "I take care of the technical routine, so you can focus on growing your product.",
-        "cta": "Get started",
+        "desc1": "I build websites and web applications for businesses, from landing pages to services and Telegram Mini Apps.",
+        "desc2": "I handle the technical work and help take a project from its first version to launch.",
+        "cta": "Discuss a project",
+        "nextStep": "We'll discuss the task and scope first. Then I'll prepare a step-by-step estimate of the cost and timeline.",
         "services": {
             "service1": {
-                "title": "Web Development (Frontend)",
-                "item1": "Modern and clean design",
-                "item2": "Flawless mobile experience",
-                "item3": "Engaging animations and interactivity"
+                "title": "Business websites",
+                "item1": "Landing pages and corporate sites",
+                "item2": "Mobile adaptation",
+                "item3": "Catalogs and online stores"
             },
             "service2": {
-                "title": "Server Logic (Backend)",
-                "item1": "Online payment integration",
-                "item2": "Secure data storage",
-                "item3": "Third-party services integration (API)"
+                "title": "Web applications and Mini Apps",
+                "item1": "Telegram applications",
+                "item2": "Dashboards and marketplaces",
+                "item3": "First product versions"
             },
             "service3": {
-                "title": "Custom Projects",
-                "item1": "Telegram Mini Apps (TMA)",
-                "item2": "Startup launches (MVP)",
-                "item3": "Marketplace development"
+                "title": "Integrations",
+                "item1": "Payments and subscriptions",
+                "item2": "CRM and external services",
+                "item3": "Data exchange through APIs"
             },
             "service4": {
-                "title": "Support & Optimization",
-                "item1": "Website performance boost",
-                "item2": "SEO optimization",
-                "item3": "Consulting and code audit"
+                "title": "Support and improvements",
+                "item1": "Bug fixes",
+                "item2": "Faster loading",
+                "item3": "New pages and features"
             }
         }
     },
@@ -50,32 +51,32 @@
         "title": "Experience",
         "marketingContext": "I don't just write code and draw pretty interfaces. My main goal is to solve your business problems: lower customer acquisition cost, boost conversion rates, and build trust with your audience. I dive deep into analytics to engineer products that bring real ROI.",
         "download-btn": "Download Resume",
-        "desc1": "My name is Ilya, and I am a web developer. For over 3 years, I've been helping businesses build and launch their projects online:",
-        "desc2": "building high-quality applications so your users stay happy, and you have peace of mind regarding the result.",
+        "desc1": "My name is Ilya, and I am a web developer. For over three years, I've been helping businesses build and launch their projects online.",
+        "desc2": "I create applications that users enjoy and that leave you confident in the result.",
         "experience": {
             "case1": {
                 "duration": "2026",
-                "role": "Full-Stack Developer",
+                "role": "Web Developer",
                 "company": "Freelance",
-                "description": "Turnkey website and service development. I handled the entire cycle: from the visual interface (buttons, animations) to internal logic (databases, server-side). Helped small businesses and startups launch their products quickly."
+                "description": "Built complete websites and web services, including interfaces, databases, and server-side logic. Helped small companies and startups launch the first versions of their products."
             },
             "case2": {
                 "duration": "2025",
                 "role": "Frontend Developer",
                 "company": "Freelance",
-                "description": "Creating user-friendly interfaces. This included developing highly popular Telegram Mini Apps and helping startups launch the first versions of their products."
+                "description": "Developed interfaces for Telegram Mini Apps and web applications. Built responsive screens and helped startups launch the first versions of their products."
             },
             "case3": {
                 "duration": "2024",
                 "role": "Frontend Developer",
                 "company": "Freelance",
-                "description": "Developed the visual part for the MindMatch system. Made the registration and login processes as simple, fast, and secure as possible for users."
+                "description": "Developed the visual side of the MindMatch system. Built the main screens and user states for registration and sign-in."
             },
             "case4": {
                 "duration": "2023",
                 "role": "UI Developer",
                 "company": "Freelance",
-                "description": "Accurate conversion of Figma designs into working code. Built responsive websites that look equally great on large monitors and mobile phone screens."
+                "description": "Converted Figma designs into working pages. Built responsive layouts for computers and phones, with close attention to spacing, typography, and components."
             }
         }
     },
@@ -109,32 +110,34 @@
         }
     },
     "FAQ": {
+        "title": "Questions and answers",
         "faqs": {
             "faq1": {
                 "question": "What kind of projects do you work on?",
-                "answer": "I work with a wide range of clients: from small businesses needing a high-converting landing page, to startups looking to build a complex platform or a Telegram Mini App. I adapt to your specific needs."
+                "answer": "I work on websites for small businesses, web applications, and Telegram Mini Apps. You can come to me with a new idea or a task for an existing project, and we'll define the right scope for it."
             },
             "faq2": {
                 "question": "What exactly can you do?",
-                "answer": "I build turnkey web projects. This can be a landing page, a corporate website, an online store, a marketplace, or a web application. I can handle just the visual part (what the client sees) or the entire internal logic (payments, databases, user dashboards)."
+                "answer": "I can build an interface or develop a complete project with server-side logic, payments, a database, and a user dashboard. It can be a landing page, a corporate site, a marketplace, or a web application."
             },
             "faq3": {
                 "question": "How long does a project take?",
-                "answer": "It depends on the scale. A standard landing page or corporate website can be launched in 2–4 weeks. Complex platforms or apps take more time. I can provide exact deadlines after we discuss your task."
+                "answer": "The timeline depends on the number of pages, features, and available materials. A landing page usually takes 2–4 weeks; I estimate an application or platform after we discuss the task."
             },
             "faq4": {
                 "question": "How is the cost calculated?",
-                "answer": "The price depends on the complexity of the logic, the number of pages, and the features. After our initial chat, I will prepare a free estimate document with a clear breakdown of the project stages."
+                "answer": "The cost depends on the scope and complexity of the work. After our first discussion, I'll prepare an estimate with stages, timing, and a clear list of deliverables."
             },
             "faq5": {
                 "question": "Do you provide support after launch?",
-                "answer": "Yes, absolutely. I don't abandon projects after delivery. You can reach out to me for technical maintenance, adding new sections, or expanding your website's functionality in the future."
+                "answer": "Yes. After launch I can fix bugs, update pages, and add new features. We'll agree on the scope and format of support separately."
             }
         }
     },
     "Footer": {
-        "title": "Let's Talk",
-        "desc": "Need a landing page, a business website, or a complex app? Drop me a message, and we'll discuss the best way to bring your idea to life."
+        "title": "Let's discuss your project",
+        "desc": "Tell me what you want to build. We'll discuss the task, define the scope, and estimate the timeline.",
+        "telegram": "Message me on Telegram"
     },
     "ProjectDetail": {
         "back": "Back",
@@ -149,71 +152,72 @@
         "businessResult": "Final Business Result",
         "previous": "Previous Project",
         "next": "Next Project",
+        "cta": "Discuss a similar project",
         "two_pistolets": {
-            "desc": "A GameFi Telegram Mini App in a mafia setting. Players complete daily tasks, build their criminal network (clan), and earn in-game currency to open cases containing real rewards — TON and Telegram Stars.",
+            "desc": "A Telegram game with tasks, clans and a case store.",
             "services": "Frontend Development",
             "client": "Startup",
             "year": "2025",
-            "concept": "The app's visual language is built on noir and mafia aesthetics. The dark color palette contrasts with bright accents like golden stars, chips, and weapons. The naming references cult cinema, setting an exciting tone for the loot box mechanics (Don's Case, Code of Honor).",
-            "scope": "Developed the app's structure and interface: case store, daily and sponsored task system (ad viewing, clicks), a multi-level referral system (clans with 10% passive income), and a player profile designed for future gamification (leaderboards, inventory, levels).",
-            "businessPain": "Players were quickly losing interest in standard bots, and acquiring new ones was becoming way too expensive.",
-            "mechanism": "We introduced game mechanics like loot boxes and a clan system, where players earn a percentage of what their invited friends make.",
-            "businessResult": "Acquiring new players became 40% cheaper because they started inviting their friends themselves. In the first month, the project reached 50,000 active users with zero ad spend."
+            "concept": "A dark interface with gold accents and mafia-themed illustrations.",
+            "scope": "Case store interface, daily and sponsored tasks, referral system and player profile.",
+            "businessPain": "Build an interface for a game with tasks, friend invitations and rewards.",
+            "mechanism": "Created the case store, task section, clans and player profile.",
+            "businessResult": "The app includes screens for completing tasks, viewing rewards and managing a clan."
         },
         "code_venture": {
-            "desc": "A platform for buying and selling ready-made SaaS MVPs and production-ready code. The project connects developers, allowing them to safely trade software architecture using an Escrow Protocol and a convenient tech stack search.",
+            "desc": "A marketplace for ready-made applications and code, searchable by technology.",
             "services": "Full-Stack Development",
             "client": "Personal Project",
             "year": "2026",
-            "concept": "The project is designed in a modern dark-mode aesthetic with neon blue-purple accents, emphasizing the product's high-tech nature. The interface uses strict typography and elements stylized as a development environment (terminal windows, code snippets) to create a trustworthy and familiar space for the target audience — programmers.",
-            "scope": "Designed and developed a full-fledged web application: landing page, catalog (Discovery Engine) with tech stack and category filtering, a product creation flow with a built-in AI description generator, and a detailed seller profile with dispute statistics and sales analytics.",
-            "businessPain": "Developers were afraid to buy code on forums due to scammers, causing 8 out of 10 potential sales to fall through.",
-            "mechanism": "We built a transparent platform with secure escrow payments (funds are held until the code is verified) and a seller review system.",
-            "businessResult": "People stopped being afraid to buy: the number of successful deals tripled, and the platform's early profits vastly exceeded expectations."
+            "concept": "A dark theme with blue and purple accents. Cards and labels use technology names familiar to developers.",
+            "scope": "Landing page, catalog, technology filters, listing creation with a description generator and seller profile.",
+            "businessPain": "Create a place for developers to list projects and buyers to find them by features and technologies.",
+            "mechanism": "Built a filtered catalog, product listing flow and seller profile.",
+            "businessResult": "Buyers can inspect a project and its seller, while authors can prepare an application listing."
         },
         "pashalka": {
-            "desc": "A builder platform allowing businesses to launch their own gamified activities in Telegram. The service includes a fully functional admin panel for app configuration and a client side featuring a mini-game, tasks, and a giveaway system to engage brand audiences.",
+            "desc": "A Telegram promo-game builder with an admin panel and a player app.",
             "services": "Frontend Development",
             "client": "Startup",
             "year": "2025",
-            "concept": "The design system is divided into two environments. The control panel is executed in a strict Dark Mode style with a bright acid-neon gradient in the header, giving the interface a modern, tech-savvy look. The client side (the game itself) offers flexible visual customization — from cartoon viruses to donuts, allowing the visuals to adapt to any brand's style.",
-            "scope": "Developed a comprehensive SaaS solution: created a company dashboard (bot profile setup, game asset selection from a library, tariff/subscription management) and built the B2C Mini App itself (arcade 'item catcher' mechanics, leaderboard integration, task system, and reward store).",
-            "businessPain": "It was too expensive and time-consuming for brands to order custom promo games from scratch.",
-            "mechanism": "We built a handy platform where any company can set up a game matching their brand style in a few clicks and launch a giveaway.",
-            "businessResult": "Now, launching a promo game takes a couple of days instead of months, significantly cutting costs for clients."
+            "concept": "A dark admin panel with bright accents. Game visuals can be adapted to the company's brand.",
+            "scope": "Bot profile, game asset library, subscription management, mini-game, leaderboard and reward store.",
+            "businessPain": "Let companies configure branded promo games and manage tasks.",
+            "mechanism": "Built the company dashboard and an app with gameplay, tasks and rewards.",
+            "businessResult": "Bot settings, game visuals and tasks are available in one dashboard, with a Telegram app for players."
         },
         "upora": {
-            "desc": "A platform for buying and selling digital products from creators worldwide. Users can act as both buyers and creators, listing their work, managing their storefront, and receiving payments through a built-in, reliable acquiring system.",
+            "desc": "A digital goods marketplace with buyer and creator accounts and Stripe payments.",
             "services": "Frontend Development, Stripe Integration",
             "client": "Startup",
             "year": "2025",
-            "concept": "A minimalist light interface supporting a Dark/Light mode toggle. The design is crafted not to distract from what matters most — the visual presentation of digital goods. Clean typography, a spacious card grid, and intuitive navigation create a modern and trustworthy user experience.",
-            "scope": "Developed the full cycle of the marketplace: a home page with catalog, search, and filtering, detailed product cards with a recommendation block, a user dashboard with role separation (buyer/creator), and seamless checkout integration via Stripe supporting credit cards, Link, Cash App, and Amazon Pay.",
-            "businessPain": "Digital creators were losing too much money to high platform fees and struggling with overly complex setups.",
-            "mechanism": "We created a simple storefront with a clear interface where creators can quickly upload their products and get paid directly via Stripe.",
-            "businessResult": "Creators started signing up and listing their work much faster, leading to rapid sales growth on the platform."
+            "concept": "Light and dark themes with large product previews and restrained navigation.",
+            "scope": "Searchable catalog, filters, product pages, recommendations, buyer and creator roles, and Stripe integration.",
+            "businessPain": "Build a digital product catalog with listing and purchasing tools.",
+            "mechanism": "Created the storefront, product pages and user accounts, and integrated Stripe payments.",
+            "businessResult": "Creators can list a product, while buyers can find it in the catalog and proceed to checkout."
         },
         "moerodnoe": {
-            "desc": "A platform for professional genealogist Dmitry Gribkov and the community of family history keepers. The site presents ancestry restoration services — from archival searches and family tree creation to writing a family book and conducting genealogical expertise.",
+            "desc": "A website for genealogist Dmitriy Gribkov, with services, work examples and consultation requests.",
             "services": "UI/UX Design, Full-Stack Development",
             "client": "Dmitry Gribkov",
             "year": "2025",
-            "concept": "The visual concept is built on associations with heritage, nature, and roots: a warm beige-green color palette and background patterns resembling tree branches. One of the main interface features is a floating video widget with the founder's message, accompanying the user as they scroll, building a personal connection and increasing trust.",
-            "scope": "Designed and developed an informative landing page. Created service cards (in a slider/carousel format) with detailed pricing descriptions, integrated a gallery of video works and reviews, set up a lead capture form for a free initial consultation, and implemented the logic for a 'sticky' video player.",
-            "businessPain": "The services were premium, but the old website failed to convey their value, leaving potential clients hesitant to get in touch.",
-            "mechanism": "We completely redesigned the site, focusing on the expert's personal brand and adding a floating video where the founder personally explains his approach.",
-            "businessResult": "People began to trust the expert more — the number of high-quality leads from target clients jumped by 150% in the first two months."
+            "concept": "A beige and green palette with tree-branch motifs connects the design to family history.",
+            "scope": "Responsive page, service and pricing cards, video gallery, testimonials, consultation form and floating video player.",
+            "businessPain": "Present the genealogist's services and help visitors choose how to work with him.",
+            "mechanism": "Built service pages, a video gallery and a booking form, and added the founder's video introduction.",
+            "businessResult": "Visitors can explore services and work examples, meet the expert and request a consultation."
         },
         "skin_space": {
-            "desc": "A platform for instant trading, buying, and selling in-game items from CS2 and DOTA 2 for real money. The service offers users safe transactions, low fees, and a guarantee on every trade.",
+            "desc": "An interface for exchanging, buying and selling CS2 and DOTA 2 items.",
             "services": "Full-Stack Development, Steam API Integration",
             "client": "Startup",
             "year": "2025",
-            "concept": "The project is executed in a classic gamer aesthetic: a dark background with an accent 'fiery' yellow color echoing the logo. Great attention is paid to high-quality 3D character renders and a clean, uncluttered UI to focus on the inventory items themselves.",
-            "scope": "Developed promotional blocks for the home page, a complex interactive trading interface (inventory panel with search, game and rarity filtering), and a functional user profile linked to Steam data (Trade link, API key, Steam ID64).",
-            "businessPain": "Beginners avoided skin trading because competitor websites were cluttered with too many buttons and confusing tables.",
-            "mechanism": "We stripped away the clutter, designed a clean interface with easy filters, and directly hooked up the Steam database for speed.",
-            "businessResult": "Trades now happen twice as fast, and users started returning to the platform much more often."
+            "concept": "A dark background with yellow accents. Inventory items and selection tools take up most of the interface.",
+            "scope": "Promotional sections, trading panel, game and rarity filters, and a profile with Steam settings.",
+            "businessPain": "Create an interface for selecting game items and managing inventory.",
+            "mechanism": "Built an inventory panel with search and filters, a user profile and Steam data integration.",
+            "businessResult": "Users can find items by game and rarity, inspect their inventory and enter Steam details in their profile."
         }
     }
 }

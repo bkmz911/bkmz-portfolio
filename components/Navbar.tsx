@@ -36,7 +36,7 @@ export default function Navbar({
                     <Link
                         href="/"
                         onClick={() => setIsOpen(false)}
-                        className="inline-flex gap-[0.3em] text-xl md:text-3xl tracking-tighter font-medium mt-2 md:mt-0 text-zinc-500 hover:text-zinc-700 transition-colors"
+                        className="inline-flex gap-[0.3em] text-xl md:text-3xl tracking-tighter font-medium mt-2 md:mt-0 text-white mix-blend-difference transition-opacity hover:opacity-70"
                     >
                         <motion.span
                             layoutId="firstName"

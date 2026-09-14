@@ -1,7 +1,6 @@
 import type {Metadata} from 'next';
 import { Geist } from 'next/font/google';
 import '../globals.css'; // Global styles
-import LenisProvider from '@/components/LenisProvider';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
@@ -36,9 +35,7 @@ export default async function RootLayout({
     <html lang={locale} className={`${geist.variable} font-sans`}>
       <body className="antialiased" suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
-          <LenisProvider>
-            {children}
-          </LenisProvider>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
