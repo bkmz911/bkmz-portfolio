@@ -29,38 +29,37 @@ export default function Navbar({
     };
 
     return (
-        <motion.nav className="fixed top-0 left-0 w-full z-50 p-2 md:p-4 flex justify-between items-start pointer-events-none">
-            {/* Left side: Logo/Name */}
-            <div className="flex-1 pointer-events-auto">
-                {isScrolled && (
-                    <Link
-                        href="/"
-                        onClick={() => setIsOpen(false)}
-                        className="inline-flex gap-[0.3em] text-xl md:text-3xl tracking-tighter font-medium mt-2 md:mt-0 text-white mix-blend-difference transition-opacity hover:opacity-70"
+        <>
+            {isScrolled && (
+                <Link
+                    href="/"
+                    onClick={() => setIsOpen(false)}
+                    className="fixed left-4 top-4 z-[60] inline-flex gap-[0.3em] text-xl md:text-3xl tracking-tighter font-medium text-white mix-blend-difference transition-opacity hover:opacity-70"
+                >
+                    <motion.span
+                        layoutId="firstName"
+                        transition={{
+                            duration: 0.8,
+                            ease: [0.16, 1, 0.3, 1],
+                        }}
+                        className="origin-left"
                     >
-                        <motion.span
-                            layoutId="firstName"
-                            transition={{
-                                duration: 0.8,
-                                ease: [0.16, 1, 0.3, 1],
-                            }}
-                            className="origin-left"
-                        >
-                            Ilyha
-                        </motion.span>
-                        <motion.span
-                            layoutId="lastName"
-                            transition={{
-                                duration: 0.8,
-                                ease: [0.16, 1, 0.3, 1],
-                            }}
-                            className="origin-left"
-                        >
-                            Bkmz
-                        </motion.span>
-                    </Link>
-                )}
-            </div>
+                        Ilyha
+                    </motion.span>
+                    <motion.span
+                        layoutId="lastName"
+                        transition={{
+                            duration: 0.8,
+                            ease: [0.16, 1, 0.3, 1],
+                        }}
+                        className="origin-left"
+                    >
+                        Bkmz
+                    </motion.span>
+                </Link>
+            )}
+
+            <motion.nav className="fixed top-0 left-0 w-full z-50 p-2 md:p-4 flex justify-end items-start pointer-events-none">
 
             {/* Right side: Expanding Menu */}
             <motion.div
@@ -156,6 +155,7 @@ export default function Navbar({
                     )}
                 </AnimatePresence>
             </motion.div>
-        </motion.nav>
+            </motion.nav>
+        </>
     );
 }
