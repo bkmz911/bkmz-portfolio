@@ -13,6 +13,9 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: 'Ilya Bkmz - Web Developer & Digital Creative',
   description: 'Portfolio of Ilya Chesnokov, a Web Developer & Digital Creative based in Russia.',
+  appleWebApp: {
+    title: 'Bkmz',
+  },
 };
 
 export function generateStaticParams() {
